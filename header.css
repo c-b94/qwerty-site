@@ -1,0 +1,100 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(55, 55, 153);
+
+}
+
+.horizontal {
+    list-style: none;
+    padding: 2px 0px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+
+}
+
+.nav-list a {
+    padding: 4px;
+    border-right: white solid 1px;
+    text-decoration: none;
+    color: rgb(238, 228, 228);
+}
+
+.nav-list li:last-of-type a {
+    border-style: none;
+}
+
+.sub-nav {
+    display: flex;
+    margin-top: 10px;
+    gap: 1%;
+}
+
+.search-form {
+    flex-grow: 1;
+    display: flex;
+}
+
+.search-form input {
+    padding: 1%;
+    border: 0px;
+    border-bottom: 1px solid black;
+    flex-grow: 1;
+}
+
+.search-form button {
+    padding: 4px;
+    background: rgb(55, 55, 153);
+    color: white;
+    border: none;
+}
+
+.company-name {
+    display: flex;
+    flex-basis: 256px;
+    font-size: 2rem;
+    color: rgb(55, 55, 153);
+    padding: 0px 2%;
+    font-weight: 100;
+    justify-content: center;
+
+}
+
+.credit-offer {
+    padding: 10px;
+    align-items: center;
+    background: red;
+    color: white;
+    font-size: 1.0rem;
+    margin-right: 2%;
+    text-decoration: none;
+
+}
+
+.short-width {
+    display: flex;
+}
+
+.full-width {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .short-width {
+        display: none;
+    }
+
+    .full-width {
+        display: flex;
+    }
+}
